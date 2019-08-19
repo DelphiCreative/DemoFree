@@ -1,0 +1,94 @@
+object fCalendario: TfCalendario
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 271
+  ClientWidth = 341
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LayPrincipal: TLayout
+    Align = Client
+    Size.Width = 341.000000000000000000
+    Size.Height = 271.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 341.000000000000000000
+      Size.Height = 221.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object GridMes: TGridPanelLayout
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 331.000000000000000000
+        Size.Height = 211.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 14.285714285714270000
+          end
+          item
+            Value = 14.285714285714280000
+          end
+          item
+            Value = 14.285714285714280000
+          end
+          item
+            Value = 14.285714285714280000
+          end
+          item
+            Value = 14.285714285714290000
+          end
+          item
+            Value = 14.285714285714290000
+          end
+          item
+            Value = 14.285714285714300000
+          end>
+        ControlCollection = <>
+        RowCollection = <
+          item
+            Value = 16.666666666666660000
+          end
+          item
+            Value = 16.666666666666660000
+          end
+          item
+            Value = 16.666666666666670000
+          end
+          item
+            Value = 16.666666666666670000
+          end
+          item
+            Value = 16.666666666666670000
+          end
+          item
+            Value = 16.666666666666680000
+          end>
+      end
+    end
+    object Rectangle2: TRectangle
+      Align = Top
+      Fill.Color = claWhite
+      Size.Width = 341.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+    end
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+  end
+end

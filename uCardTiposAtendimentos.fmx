@@ -1,0 +1,186 @@
+inherited fCardTiposAtendimentos: TfCardTiposAtendimentos
+  BorderStyle = None
+  Caption = 'fCardTiposAtendimentos'
+  ClientWidth = 444
+  Position = DesktopCenter
+  DesignerMasterStyle = 0
+  inherited LayoutCard: TLayout
+    Size.Width = 444.000000000000000000
+    inherited retPrincipal: TRectangle
+      Size.Width = 444.000000000000000000
+      inherited retTopo: TRectangle
+        Fill.Color = claSteelblue
+        Size.Width = 444.000000000000000000
+        Size.Height = 40.000000000000000000
+        inherited SombraTopo: TShadowEffect
+          Softness = 0.000000000000000000
+          Opacity = 0.000000000000000000
+          Enabled = False
+        end
+        object lblTitulo: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Margins.Left = 5.000000000000000000
+          Size.Width = 439.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          Text = 'Configurar Tarefas'
+          TabOrder = 0
+        end
+      end
+      object ListBox1: TListBox
+        Align = Client
+        Size.Width = 444.000000000000000000
+        Size.Height = 176.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxstyle'
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 444.000000000000000000
+        Viewport.Height = 176.000000000000000000
+      end
+      object Rectangle1: TRectangle
+        Align = Bottom
+        Fill.Color = claWhite
+        Padding.Left = 2.000000000000000000
+        Padding.Top = 2.000000000000000000
+        Padding.Right = 2.000000000000000000
+        Padding.Bottom = 2.000000000000000000
+        Position.Y = 250.000000000000000000
+        Size.Width = 444.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Rectangle3: TRectangle
+          Align = Right
+          Fill.Color = claRed
+          Margins.Right = 2.000000000000000000
+          Position.X = 256.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 92.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object btnSair: TSpeedButton
+            Align = Contents
+            StyledSettings = [Family, Size, Style]
+            Size.Width = 92.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Sair'
+            TextSettings.FontColor = claWhite
+            OnClick = btnSairClick
+          end
+          object Rectangle6: TRectangle
+            Align = Left
+            Fill.Bitmap.Bitmap.PNG = {
+              89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+              57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              010E49444154384FCD933D0AC2401085B31B08A4B0B1F10A16A2B980602162E7
+              79FC29D5DABBD85AA8075041CF61232112F2E39B30599310772D2CFC60086F32
+              FBB2339BB5FE0EC14F2B49926E9AA62B296583535A50FF10424C517F232DB32C
+              60933E4B23548B356B966F90DC53B03452AD573BAA0385122D2C104D4E7D4419
+              A1F842C13203469D2008E6C8EFBE31D3028391EFFB411445A7A259B535756A71
+              1C6F30408F6589300CDB8EE3B4507346CD1071CF4D7072037A6A67F453D0CE18
+              AD3D4DAD29A8350A961958D8AB3321AA46AA359A4F7546E8FFEABAEE329F0BA7
+              6BD1CE0846090CC8486B42144F6D8B0574454AFF92060FED1E6CDB9E90503BC2
+              D76778716469844CE8D2B2FC3B2CEB0505EBAF14F2CCCCD90000000049454E44
+              AE426082}
+            Fill.Bitmap.WrapMode = TileOriginal
+            Fill.Kind = Bitmap
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 21.000000000000000000
+            Size.Height = 21.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claNull
+          end
+        end
+        object Rectangle4: TRectangle
+          Align = Right
+          Fill.Color = claCornflowerblue
+          Position.X = 350.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 92.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object btnSalvar: TSpeedButton
+            Align = Right
+            StyledSettings = [Family, Size, Style]
+            Size.Width = 92.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Salvar'
+            TextSettings.FontColor = claWhite
+            OnClick = btnSalvarClick
+          end
+          object Rectangle5: TRectangle
+            Align = Left
+            Fill.Bitmap.Bitmap.PNG = {
+              89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+              57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              012549444154384FCD933D4EC3401046BD1B244491DC820A535053D0E6187469
+              695341458710B583C411105C2045A47080283788A8A334696CF366FDB1C8926D
+              1C2A9E349A9FDDF956B3F626BF5114C519962AFD1B6559BE60813CCF9F556EC4
+              C9DBC9E7ECBFF7DE0F951F115FE21F4807C437C40B7CAEF59D736E4ABEB23CC2
+              89EFD5D975A83F624F4A6B507F53FB0FD4E7D5F241CCD59E78F9DE30D246618D
+              838410C9B89753FC874A91DE4234CFB8D809E11576118A4DD8BCD5D8E1123F15
+              06C8339C436C4CBCAFAA817847112BDA0A1B97349C10867F887C866B12313A85
+              F6D644E8B16BAC4DC4681732BEC5ACDE2162747F7E2EF5984DAFD89D79CBB5D4
+              4AEB5753F36D1F11230A31C24E616FE8D92AAC3DDA9431ECD18E54EAC444F468
+              D72AFD2B92E40BE64397AD5C04A8FE0000000049454E44AE426082}
+            Fill.Bitmap.WrapMode = TileOriginal
+            Fill.Kind = Bitmap
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 21.000000000000000000
+            Size.Height = 21.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claNull
+          end
+        end
+      end
+      object Rectangle2: TRectangle
+        Align = Top
+        Fill.Color = claWhite
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 42.000000000000000000
+        Size.Width = 437.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+        object cbxTarefas: TComboEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 0
+          ItemHeight = 19.000000000000000000
+          ItemIndex = -1
+          Hint = 'Tarefa'
+          Size.Width = 437.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          OnChangeTracking = cbxTarefasChangeTracking
+        end
+      end
+    end
+  end
+end

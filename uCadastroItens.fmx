@@ -1,0 +1,333 @@
+inherited fCadastrosItens: TfCadastrosItens
+  Caption = 'fCadastros1'
+  ClientHeight = 192
+  ClientWidth = 863
+  DesignerMasterStyle = 0
+  inherited layPrincipal: TLayout
+    Align = Center
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Size.Width = 843.000000000000000000
+    Size.Height = 160.000000000000000000
+    inherited btnCancelar: TButton
+      Position.X = 469.000000000000000000
+      Position.Y = 148.000000000000000000
+      Visible = False
+    end
+    inherited btnSalvar: TButton
+      Position.X = 390.000000000000000000
+      Position.Y = 252.000000000000000000
+      Visible = False
+    end
+    object Rectangle2: TRectangle
+      Align = Client
+      Fill.Color = claNull
+      Size.Width = 833.000000000000000000
+      Size.Height = 150.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object edtID: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        ReadOnly = True
+        Position.X = 499.000000000000000000
+        Position.Y = 184.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+        OnChangeTracking = edtIDChangeTracking
+      end
+      object retMenu: TRectangle
+        Align = Left
+        Fill.Color = claWhite
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 140.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object ShadowEffect5: TShadowEffect
+          Distance = 1.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.200000002980232200
+          Opacity = 0.500000000000000000
+          ShadowColor = claSteelblue
+        end
+        object Rectangle1: TRectangle
+          Align = Top
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Cursor = crHandPoint
+          Fill.Bitmap.WrapMode = TileStretch
+          Fill.Kind = Bitmap
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 167.000000000000000000
+          Size.Height = 133.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claSteelblue
+          OnClick = Rectangle1Click
+        end
+      end
+      object TabControl1: TTabControl
+        Align = Client
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 641.000000000000000000
+        Size.Height = 140.000000000000000000
+        Size.PlatformDefault = False
+        TabIndex = 0
+        TabOrder = 1
+        TabPosition = None
+        Sizes = (
+          641s
+          140s
+          641s
+          140s)
+        object ShadowEffect2: TShadowEffect
+          Distance = 1.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.200000002980232200
+          Opacity = 0.500000000000000000
+          ShadowColor = claSteelblue
+        end
+        object tbDadosGerais: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'tbDadosGerais'
+          ExplicitSize.cx = 69.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object edtValorVenda: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 2
+            MaxLength = 8
+            Position.X = 8.000000000000000000
+            Position.Y = 115.000000000000000000
+            Hint = 'Valor R$'
+            Size.Width = 628.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyDown = edtValorVendaKeyDown
+          end
+          object edtCodigoBarra: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 1
+            Position.X = 8.000000000000000000
+            Position.Y = 84.000000000000000000
+            Hint = 'C'#243'digo Barra'
+            Size.Width = 628.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object edtDescricao: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            StyleLookup = 'transparentedit'
+            TabOrder = 0
+            Position.X = 8.000000000000000000
+            Position.Y = 53.000000000000000000
+            Hint = 'Descri'#231#227'o'
+            Size.Width = 628.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            ParentShowHint = False
+            ShowHint = False
+            OnExit = EditExit
+            object Line2: TLine
+              Align = Bottom
+              LineType = Top
+              Position.Y = 21.000000000000000000
+              Size.Width = 628.000000000000000000
+              Size.Height = 1.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claSteelblue
+            end
+          end
+          object Rectangle3: TRectangle
+            Align = Top
+            Fill.Color = claSteelblue
+            Padding.Left = 2.000000000000000000
+            Padding.Top = 2.000000000000000000
+            Padding.Right = 2.000000000000000000
+            Padding.Bottom = 2.000000000000000000
+            Size.Width = 641.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Layout1: TLayout
+              Align = Left
+              Position.X = 2.000000000000000000
+              Position.Y = 2.000000000000000000
+              Size.Width = 137.000000000000000000
+              Size.Height = 36.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Rectangle4: TRectangle
+                Fill.Bitmap.Bitmap.PNG = {
+                  89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+                  57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  012A49444154384FCD933D4EC3401484BD6B3714E1165484823A052DC7A0A3A5
+                  A5A3A243287582943324174811090E80B801A246298CE59FCD8C775864C9761C
+                  AA7CD2D3BE37DE37EB5D7BA37D5455758E18ABFC1FCEB905A2A62CCB17C9AD18
+                  8D5CF902F31FADB523D6684CE2389E407F421943BF83B681566AFED618730FFD
+                  9D750093567EED26D09F1153950DA02FD5FE07F4B57F7C106BB54756E360F23C
+                  FF54DAE020239CCB2C4992336CE94D5260B0114CE638D85BA45778AB4BAFB6C0
+                  FDFA6D3B9765D997D21ABCC10C8381D9759AA63F5EAD096714A0C8274551BCA2
+                  E10469FD0FC1648EA1CD84741B71329B905AC40DA2CB84741B915F33EA3D26A4
+                  DF88A8F9A1C784EC371A48300A9F1F5BD82A1D0C7ABE95362EED182BF0D29E4A
+                  EA8526BAB41F928E8A28DA01AD65FC696426158A0000000049454E44AE426082}
+                Fill.Bitmap.WrapMode = TileOriginal
+                Fill.Kind = Bitmap
+                Margins.Left = 2.000000000000000000
+                Margins.Top = 2.000000000000000000
+                Margins.Right = 2.000000000000000000
+                Margins.Bottom = 2.000000000000000000
+                Position.X = 7.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 20.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+              end
+              object Label1: TLabel
+                StyledSettings = [Family, Size, Style]
+                Position.X = 32.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 99.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.FontColor = claWhite
+                Text = 'Salvar Altera'#231#245'es'
+                TabOrder = 1
+              end
+              object btSalvar: TSpeedButton
+                Align = Client
+                StyledSettings = [Family, Size, Style]
+                Hint = 'Salvar as altera'#231#245'es'
+                Size.Width = 137.000000000000000000
+                Size.Height = 36.000000000000000000
+                Size.PlatformDefault = False
+                ParentShowHint = False
+                ShowHint = True
+                OnClick = btSalvarClick
+              end
+            end
+            object Layout2: TLayout
+              Align = Right
+              Position.X = 556.000000000000000000
+              Position.Y = 2.000000000000000000
+              Size.Width = 83.000000000000000000
+              Size.Height = 36.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Label2: TLabel
+                StyledSettings = [Family, Size, Style]
+                Position.X = 33.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 99.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.FontColor = claWhite
+                Text = 'Sair'
+                TabOrder = 1
+              end
+              object Rectangle6: TRectangle
+                Fill.Bitmap.Bitmap.PNG = {
+                  89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+                  57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  010B49444154384FCD933D0E82401085D92581CAC6C62B5818E5022616C6D879
+                  1E7F4AB5F62EB616EA01D444CF6163A110587C438615082E16167CC984BC61F6
+                  B133CB5AB543F0D3524A75E3385E49291B9C3282FA8710628AFA1B699964019B
+                  F4595642B558B366F901C93D05CB4A8AF57A4765A050A28505A2C9A9AF682314
+                  5F285826C0A8E3FBFE1CF9DD2F664660307A82300C4F59B3626BFAD4A228DA60
+                  801ECB1C4110B41DC769A1E68C9A21E29E9AE0E406F434CEE8AFA09D313A7B55
+                  B5A6A1D62858266061AFCC84281AE9D6683EC519A1FFABEBBACB742E9C2EC538
+                  231829189091D184C89EDA160BE88AE4FE25031EDA3DD8B63D21A17784AFCFF0
+                  E2C8B21232A14BCBB27658D61B3A17AF26045FD6770000000049454E44AE4260
+                  82}
+                Fill.Bitmap.WrapMode = TileOriginal
+                Fill.Kind = Bitmap
+                Margins.Left = 2.000000000000000000
+                Margins.Top = 2.000000000000000000
+                Margins.Right = 2.000000000000000000
+                Margins.Bottom = 2.000000000000000000
+                Position.X = 10.000000000000000000
+                Position.Y = 10.000000000000000000
+                Size.Width = 20.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+              end
+              object btCancelar: TSpeedButton
+                Align = Client
+                Anchors = [akBottom]
+                StyledSettings = [Family, Size, Style]
+                Hint = 'Cancelar e Sair'
+                Size.Width = 83.000000000000000000
+                Size.Height = 36.000000000000000000
+                Size.PlatformDefault = False
+                ParentShowHint = False
+                ShowHint = True
+                OnClick = btCancelarClick
+              end
+            end
+          end
+        end
+        object tbDadosAdicionais: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'tbDadosAdicionais'
+          ExplicitSize.cx = 69.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+        end
+      end
+    end
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.200000002980232200
+      Opacity = 0.600000023841857900
+      ShadowColor = claSteelblue
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 152
+    Top = 72
+  end
+  object actContatos: TActionList
+    Left = 431
+    Top = 154
+    object tbDadosGeraisChange: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbDadosGerais
+    end
+    object tbDadosAdicionaisChange: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbDadosAdicionais
+    end
+  end
+end

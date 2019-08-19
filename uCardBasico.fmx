@@ -1,0 +1,47 @@
+object fCardBasico: TfCardBasico
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 282
+  ClientWidth = 573
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LayoutCard: TLayout
+    Align = Client
+    Size.Width = 573.000000000000000000
+    Size.Height = 282.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object retPrincipal: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 573.000000000000000000
+      Size.Height = 282.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object retTopo: TRectangle
+        Align = Top
+        Size.Width = 573.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object SombraTopo: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.200000002980232200
+          Opacity = 0.400000005960464500
+          ShadowColor = claBlack
+        end
+      end
+    end
+    object SombraPrincipal: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+  end
+end

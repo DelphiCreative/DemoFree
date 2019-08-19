@@ -1,0 +1,742 @@
+object fBuscaAvancada: TfBuscaAvancada
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 358
+  ClientWidth = 735
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object layContatos: TLayout
+    Position.X = 40.000000000000000000
+    Position.Y = 30.000000000000000000
+    Size.Width = 561.000000000000000000
+    Size.Height = 37.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object retContatos: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Bottom = 1.000000000000000000
+      Size.Width = 561.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnMouseMove = retContatosMouseMove
+      object imgContatos: TRoundRect
+        Align = Left
+        Fill.Bitmap.WrapMode = TileStretch
+        Fill.Kind = Bitmap
+        Size.Width = 36.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+      end
+      object lblContatoEndereco: TLabel
+        Anchors = [akLeft, akTop, akRight]
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 55.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 433.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 10.000000000000000000
+        Text = 'lblContatoEndereco'
+        TabOrder = 2
+      end
+      object lblContatoNome: TText
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 56.000000000000000000
+        Size.Width = 502.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Diego'
+        TextSettings.FontColor = xFF0A235E
+        TextSettings.HorzAlign = Leading
+        object lblDocumento: TLabel
+          Align = Right
+          StyledSettings = [Family]
+          Margins.Right = 60.000000000000000000
+          Position.X = 282.000000000000000000
+          Size.Width = 160.000000000000000000
+          Size.Height = 21.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = xFF0A235E
+          TextSettings.HorzAlign = Trailing
+          Text = 'CPF'
+          TabOrder = 0
+        end
+      end
+      object Layout1: TLayout
+        Align = Right
+        HitTest = True
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Position.X = 427.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnMouseMove = Layout1MouseMove
+      end
+    end
+  end
+  object LayTitulo: TLayout
+    Position.X = 40.000000000000000000
+    Position.Y = 73.000000000000000000
+    Size.Width = 561.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = xFF0A235E
+      Margins.Bottom = 1.000000000000000000
+      Size.Width = 561.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnMouseMove = Rectangle1MouseMove
+    end
+    object lblTitulo: TLabel
+      Align = Client
+      StyledSettings = [Family]
+      Margins.Left = 10.000000000000000000
+      Size.Width = 551.000000000000000000
+      Size.Height = 21.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claSteelblue
+      Text = 'lblContatoNome'
+      TabOrder = 1
+    end
+  end
+  object layCadastro: TLayout
+    Position.X = 40.000000000000000000
+    Position.Y = 98.000000000000000000
+    Size.Width = 563.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Rectangle4: TRectangle
+      Align = Client
+      Fill.Color = xFF0A235E
+      Margins.Bottom = 1.000000000000000000
+      Size.Width = 563.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnMouseMove = retContatosMouseMove
+      object Layout3: TLayout
+        Align = Right
+        HitTest = True
+        Margins.Top = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 434.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Rectangle3: TRectangle
+          Align = Right
+          Cursor = crHandPoint
+          Fill.Bitmap.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+            57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00A749444154384FD594D109C2301445A3B88B6BB8840B7411EB26FEBA852338
+            80607582FE0BEABDF1A5B48F47BC607F3C70B84D935ED2069AE662615958C32D
+            5CE5D1940E1E3E97DFB9C157600F9FB0851251093DC106CA655109651191CBA2
+            125A8A88541695D033DC8CE447E7FD017F6A934981E1F9A5E5CFD476E4E70AE1
+            9A5AD1DED2B3B32452918254E4E70A7FF26AFEF8EF960A57CB8CDF51ED3732E6
+            018FF09247F391D21B94A53D10956783A50000000049454E44AE426082}
+          Fill.Bitmap.WrapMode = TileOriginal
+          Fill.Kind = Bitmap
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 108.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 20.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = btnEditarClick
+        end
+      end
+      object btnIncluirCliente: TSpeedButton
+        Align = Left
+        StyledSettings = [Style]
+        Size.Width = 100.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'CLIENTE'
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claWhite
+        OnClick = btnIncluirClienteClick
+        object Rectangle8: TRectangle
+          Align = Left
+          Cursor = crHandPoint
+          Fill.Bitmap.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+            57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            014649444154384FCD94BD4EC33014851312652195D8A0B030B14125A8C4044B
+            3756D49D47608295BE40C5C21BF441C24B30C38058510212F9E75CE7C48A9B44
+            74A0523FE9E6FA1CDB37B6E3D65A1B45511C20EE11635A1A78E7ECDBA7D54F96
+            65CF2588A2E80BC9A72D450661187E4B1F08686BB698358EE394926DDB563394
+            49C4938CA286DF09060D117788535A1A7863F60D69698C15610153C4026FBE42
+            CCF33C9F41DBEC1626D013E4934AF6C07359E64CFAB08A117519C7F10792B108
+            43F8BEBFCD6693813C3071AA14F03C6F0FE9B25215ADC3EE032BD2858465BD52
+            214C3A765DF78852816B72DDDC9E51284DD337DC959C52F43B06FF34B75583ED
+            EDC2BFA06C9324C92B06D41C8A87822FD406F8AA4F6A52175D856AA083CA2E1F
+            6869563EECBFD8BC42CDEBAFC0A7BEC5CF6387F211ED4FB6E58C6E90E4DC02F8
+            AD7F807FC0B27E015DE7026AF06CECDC0000000049454E44AE426082}
+          Fill.Bitmap.WrapMode = TileOriginal
+          Fill.Kind = Bitmap
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 20.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = btnAddItemClick
+        end
+      end
+      object btnIncluirServico: TSpeedButton
+        Align = Left
+        StyledSettings = [Style]
+        Position.X = 321.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'SERVI'#199'O'
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claWhite
+        OnClick = btnIncluirServicoClick
+        object Rectangle10: TRectangle
+          Align = Left
+          Cursor = crHandPoint
+          Fill.Bitmap.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+            57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00FC49444154384FCD93410AC2301045D34097A237D09B7814150FE0C203A87B
+            11DC0BEA513C89E00DD46569EB9B3155521B31E2C207C34C86CCE44FDA985F91
+            38EF519665071B2749D2722985DC95DC063BBBD47BF23CDF531462E7B67958E7
+            3DACB55DDC81933D2487F5644F1D1D8D532C3660AF343059960DC5A769EA9D5E
+            CF5373A2668B95B23645518C44F39768731DAD528257086584D0688F3CB1A0A3
+            36DE1188F4A64B0DE5EF206F2E1ADDF263A406E612871445537D35E93AC316B2
+            8E406BB82E55F518ED4BB4495D917C9518FAD8AB225D442035F054C40F39A5EB
+            92305A118DA63CA955355A1BB7C61ADF5108041C1130A1D1C5A5FE06636EA6DF
+            001E3F166FC20000000049454E44AE426082}
+          Fill.Bitmap.WrapMode = TileOriginal
+          Fill.Kind = Bitmap
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 20.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = btnAddItemClick
+        end
+      end
+      object btnIncluirProfissional: TSpeedButton
+        Align = Left
+        StyledSettings = [Style]
+        Position.X = 210.000000000000000000
+        Size.Width = 111.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'PROFISSIONAL'
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claWhite
+        OnClick = btnIncluirProfissionalClick
+        object Rectangle9: TRectangle
+          Align = Left
+          Cursor = crHandPoint
+          Fill.Bitmap.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+            57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00DC49444154384FED913B0EC2301044639709341C819E035071033E0DE24294
+            9C844B50201ACE40CDA74181584A44123313D9E010420112559E64EDCC7AB39B
+            95BD86DFC8F37C9224C9318EE393D67ACC5C9AA61BD757C08536F2019B304FA8
+            99CBB26CE17A8B34B10EB7B9D5C2C4F2E062DC0BE68AAB8D30798F73801E3287
+            D5D6AEAFE036F806FB9B452301A831AD8330456A80D3650E573B29E50A72097D
+            464D1FB1673D6B4AA0601645D1958DDFA194BAA0864304D6DCC287F4E6F3279F
+            9A58D88CB578C1B9F595570B82A065642DBEEFB719B1EACDF50D7FC1F3EEE6A3
+            EA50B5E6742D0000000049454E44AE426082}
+          Fill.Bitmap.WrapMode = TileOriginal
+          Fill.Kind = Bitmap
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 20.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = btnAddItemClick
+        end
+      end
+      object btnIncluirFornecedor: TSpeedButton
+        Align = Left
+        StyledSettings = [Style]
+        Position.X = 100.000000000000000000
+        Size.Width = 110.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'FORNECEDOR'
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claWhite
+        OnClick = btnIncluirFornecedorClick
+        object Rectangle7: TRectangle
+          Align = Left
+          Cursor = crHandPoint
+          Fill.Bitmap.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+            57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00D449444154384F6318C6E0DFBF7FEC7FFEFC39F89F787000AA150530313232
+            9A323333DB41F964032620668130290320834805F6502F824002548C7483FEFE
+            FD7B124829020D31FFFDFB772B308CB5C012400107B0D9C4037860030DF10546
+            D415A01817239070008AED8748910D1CC90923AC00C5A06FDFBE7D063A77D5D7
+            AF5FBF408530004E3540AF1980FCFDFDFBF7F74005852031205D0CE283C49131
+            1E350620313000C6C64C20DE0254A00DA4B703F134A8141C10A3066483285062
+            F7C78F1F7F02E99D405B44A05270408C9A6107181800C0432381DC57C4DF0000
+            000049454E44AE426082}
+          Fill.Bitmap.WrapMode = TileOriginal
+          Fill.Kind = Bitmap
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 1.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 20.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = btnAddItemClick
+        end
+      end
+    end
+  end
+  object layAtendimentoItens: TLayout
+    Position.X = 40.000000000000000000
+    Position.Y = 150.000000000000000000
+    Size.Width = 561.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object retFundoAtendimentoItem: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Bottom = 1.000000000000000000
+      Size.Width = 561.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claCornflowerblue
+      OnMouseMove = retContatosMouseMove
+      object Layout4: TLayout
+        Align = Right
+        HitTest = True
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 488.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 71.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnMouseMove = Layout4MouseMove
+      end
+      object lblItemValor: TLabel
+        Align = Right
+        StyledSettings = [Family]
+        Position.X = 392.000000000000000000
+        Size.Width = 96.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claDarkslategray
+        Text = 'R$ 10,00'
+        TabOrder = 1
+        OnMouseMove = lblItemValorMouseMove
+      end
+      object lblItemDescricao: TLabel
+        Align = Client
+        StyledSettings = [Family]
+        Size.Width = 291.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claDarkslategray
+        Text = 'Nenhum resultado encontrado'
+        TabOrder = 2
+        OnMouseMove = lblItemValorMouseMove
+      end
+      object lblItemCodigo: TLabel
+        Align = Left
+        StyledSettings = [Family]
+        Margins.Left = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 96.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claDarkslategray
+        Text = '0001'
+        TabOrder = 3
+        OnMouseMove = lblItemValorMouseMove
+      end
+    end
+  end
+  object retRomoverItem: TRectangle
+    Fill.Color = claRed
+    Position.X = 200.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    object btnRemoveItem: TSpeedButton
+      Align = Client
+      StyledSettings = [Family, Size, Style]
+      Size.Width = 153.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Remover'
+      TextSettings.FontColor = claWhite
+      OnClick = btnRemoveItemClick
+    end
+  end
+  object retAtalhos: TRectangle
+    Fill.Color = claNull
+    Position.X = 40.000000000000000000
+    Position.Y = 242.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    object Rectangle5: TRectangle
+      Align = Right
+      Cursor = crHandPoint
+      Fill.Bitmap.Bitmap.PNG = {
+        89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+        57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        00A749444154384FD594D109C2301445A3B88B6BB8840B7411EB26FEBA852338
+        80607582FE0BEABDF1A5B48F47BC607F3C70B84D935ED2069AE662615958C32D
+        5CE5D1940E1E3E97DFB9C157600F9FB0851251093DC106CA655109651191CBA2
+        125A8A88541695D033DC8CE447E7FD017F6A934981E1F9A5E5CFD476E4E70AE1
+        9A5AD1DED2B3B32452918254E4E70A7FF26AFEF8EF960A57CB8CDF51ED3732E6
+        018FF09247F391D21B94A53D10956783A50000000049454E44AE426082}
+      Fill.Bitmap.WrapMode = TileOriginal
+      Fill.Kind = Bitmap
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 132.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnClick = btnEditarClick
+    end
+    object Rectangle6: TRectangle
+      Align = Right
+      Cursor = crHandPoint
+      Fill.Bitmap.Bitmap.PNG = {
+        89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+        57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        00A349444154384F63A0257000E20608132B00C981D410042085FF214CAC0024
+        87CF22865020FE0CC42085C46090DA6020C6007B80189B067C78371083011394
+        060116284D0A6085D20C8C501A040E00B101105F00F30803985A8C80071904C2
+        C40214F5C85E430613A0180470B151002E83280234F11AC9608418F41088ED81
+        185B56C086416AEF01311820A76C7E204E06623E308F30F808C47381F8139847
+        1DC0C00000D7FB3A1C3D18CE7C0000000049454E44AE426082}
+      Fill.Bitmap.WrapMode = TileOriginal
+      Fill.Kind = Bitmap
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 110.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnClick = btnAtendimentosClick
+    end
+    object btnBuscaAddServico: TRectangle
+      Align = Right
+      Cursor = crHandPoint
+      Fill.Bitmap.Bitmap.PNG = {
+        89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+        57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        008D49444154384F63187480114A630306403C01C284830220BE0061120F1C80
+        F83F1A068961054C509A6240358398A1340C7000B10D102B0031288C3C801819
+        5C0462901A90FC0B20FE03C438410310A3870D3A06A9210AE0338C684360009B
+        61241B0203C886916D080C800CA0D810A2017A1601456B028449102C00E20710
+        2626C0962D70619CD96558010606003F9F2FA115BE8DF70000000049454E44AE
+        426082}
+      Fill.Bitmap.WrapMode = TileOriginal
+      Fill.Kind = Bitmap
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 88.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnClick = btnAddItemClick
+    end
+  end
+  object layUsuarios: TLayout
+    Position.X = 40.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Rectangle11: TRectangle
+      Align = Client
+      Fill.Color = xFF0A235E
+      Size.Width = 225.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object btnLiberarAcesso: TRectangle
+        Align = Right
+        Fill.Bitmap.Bitmap.PNG = {
+          89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+          57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          014449444154384FAD93BB4AC5401086934D4484E4293C58A9E7010415B1B2B7
+          17DFC1DE5A7C0005452CEDACB5B1D0CEC6521141047B4D826C6212BF49A63090
+          CBF1F2C1B033FFCECE6E6637AED34359963EB6886B5CD7BDC3B27AE6071445B1
+          61AD7DA55085F8A2E9F464B060218A229BE7F905FE0AB68C7F291AFEBCA60DC3
+          A283344D5F5834AD92149F91533177A85203A363037A71E3FBFE8E31C6AAE4E0
+          7FA0DDE28E6AE50F709A73DA75A5613724EED387CFBABDDD480EB97BBAACA271
+          FD921004C135EED0AEAB711C2F856138A57113DD7057C34E24471235AC686DF6
+          77B8AD1136AB6127BD85D8743D49927BEC81626B2AB73254684CCF8C18E1B856
+          DBE92DC47B3A6238E534278CC795D8C150A1376CCBF3BC6D1EE4BBCAADF416FA
+          35FC5FCF72AD939065D9932EAB683C487A31C7B0C9E7B43F3445EA309CF1B98F
+          B5F26F38CE170757F9590E2A970A0000000049454E44AE426082}
+        Fill.Bitmap.WrapMode = TileOriginal
+        Fill.Kind = Bitmap
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 7.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 7.000000000000000000
+        Position.X = 203.000000000000000000
+        Position.Y = 7.000000000000000000
+        Size.Width = 17.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        OnClick = btnLiberarAcessoClick
+      end
+    end
+    object lblUsuarioLiberar: TLabel
+      StyledSettings = [Family, Size, Style]
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      TextSettings.FontColor = claWhite
+      Text = 'Usuario'
+      TabOrder = 1
+    end
+  end
+  object Rectangle2: TRectangle
+    Fill.Color = claNull
+    Position.X = 448.000000000000000000
+    Position.Y = 6.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    object btnEditar: TRectangle
+      Align = Right
+      Cursor = crHandPoint
+      Fill.Bitmap.Bitmap.PNG = {
+        89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+        57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        00A749444154384FD594D109C2301445A3B88B6BB8840B7411EB26FEBA852338
+        80607582FE0BEABDF1A5B48F47BC607F3C70B84D935ED2069AE662615958C32D
+        5CE5D1940E1E3E97DFB9C157600F9FB0851251093DC106CA655109651191CBA2
+        125A8A88541695D033DC8CE447E7FD017F6A934981E1F9A5E5CFD476E4E70AE1
+        9A5AD1DED2B3B32452918254E4E70A7FF26AFEF8EF960A57CB8CDF51ED3732E6
+        018FF09247F391D21B94A53D10956783A50000000049454E44AE426082}
+      Fill.Bitmap.WrapMode = TileOriginal
+      Fill.Kind = Bitmap
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 132.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnClick = btnEditarClick
+    end
+    object btnAtendimentos: TRectangle
+      Align = Right
+      Cursor = crHandPoint
+      Fill.Bitmap.Bitmap.PNG = {
+        89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+        57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        00A349444154384F63A0257000E20608132B00C981D410042085FF214CAC0024
+        87CF22865020FE0CC42085C46090DA6020C6007B80189B067C78371083011394
+        060116284D0A6085D20C8C501A040E00B101105F00F30803985A8C80071904C2
+        C40214F5C85E430613A0180470B151002E83280234F11AC9608418F41088ED81
+        185B56C086416AEF01311820A76C7E204E06623E308F30F808C47381F8139847
+        1DC0C00000D7FB3A1C3D18CE7C0000000049454E44AE426082}
+      Fill.Bitmap.WrapMode = TileOriginal
+      Fill.Kind = Bitmap
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 110.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnClick = btnAtendimentosClick
+    end
+    object btnAddItem: TRectangle
+      Align = Right
+      Cursor = crHandPoint
+      Fill.Bitmap.Bitmap.PNG = {
+        89504E470D0A1A0A0000000D494844520000001200000012080600000056CE8E
+        57000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        008D49444154384F63187480114A630306403C01C284830220BE0061120F1C80
+        F83F1A068961054C509A6240358398A1340C7000B10D102B0031288C3C801819
+        5C0462901A90FC0B20FE03C438410310A3870D3A06A9210AE0338C684360009B
+        61241B0203C886916D080C800CA0D810A2017A1601456B028449102C00E20710
+        2626C0962D70619CD96558010606003F9F2FA115BE8DF70000000049454E44AE
+        426082}
+      Fill.Bitmap.WrapMode = TileOriginal
+      Fill.Kind = Bitmap
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 88.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnClick = btnAddItemClick
+    end
+  end
+  object layContasLiquidadas: TLayout
+    Position.X = 48.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 353.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Rectangle12: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Bottom = 1.000000000000000000
+      Size.Width = 353.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      OnMouseMove = retContatosMouseMove
+      object Layout5: TLayout
+        Align = Right
+        HitTest = True
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 280.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 71.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object retLiquidar: TRectangle
+          Align = Client
+          Fill.Color = claRed
+          Size.Width = 71.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          object btnLiquidar: TSpeedButton
+            Align = Client
+            StyledSettings = [Family, Size, Style]
+            Size.Width = 71.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Liquidar'
+            TextSettings.FontColor = claWhite
+            OnClick = btnLiquidarClick
+          end
+        end
+      end
+      object lblContaValor: TLabel
+        Align = Right
+        StyledSettings = [Family]
+        Position.X = 216.000000000000000000
+        Size.Width = 64.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claDarkslategray
+        Text = 'R$ 1.000,00'
+        TabOrder = 1
+        OnMouseMove = lblItemValorMouseMove
+      end
+      object lblDescricaoConta: TLabel
+        Align = Client
+        StyledSettings = [Family]
+        Size.Width = 143.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claDarkslategray
+        Text = 'Nenhum resultado encontrado'
+        TabOrder = 2
+        OnMouseMove = lblItemValorMouseMove
+      end
+      object lblDataVencimento: TLabel
+        Align = Left
+        StyledSettings = [Family]
+        Margins.Left = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 68.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claDarkslategray
+        Text = '14/02/2012'
+        TabOrder = 3
+        OnMouseMove = lblItemValorMouseMove
+      end
+    end
+    object Line1: TLine
+      Align = Bottom
+      LineType = Bottom
+      Position.Y = 33.000000000000000000
+      Size.Width = 353.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claSteelblue
+    end
+  end
+end

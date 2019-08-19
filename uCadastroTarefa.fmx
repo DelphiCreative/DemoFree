@@ -1,0 +1,127 @@
+object fCadastroTarefa: TfCadastroTarefa
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 131
+  ClientWidth = 411
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ShadowEffect1: TShadowEffect
+    Distance = 3.000000000000000000
+    Direction = 45.000000000000000000
+    Softness = 0.300000011920929000
+    Opacity = 0.600000023841857900
+    ShadowColor = claBlack
+  end
+  object LayPrincipal: TLayout
+    Align = Client
+    Size.Width = 411.000000000000000000
+    Size.Height = 131.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle2: TRectangle
+      Align = Contents
+      Fill.Color = claWhite
+      Size.Width = 411.000000000000000000
+      Size.Height = 131.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        StyleLookup = 'transparentedit'
+        TabOrder = 1
+        Position.X = 8.000000000000000000
+        Position.Y = 55.000000000000000000
+        Size.Width = 393.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        OnChangeTracking = Edit1ChangeTracking
+        object Line1: TLine
+          Align = Bottom
+          LineType = Bottom
+          Position.Y = 21.000000000000000000
+          Size.Width = 393.000000000000000000
+          Size.Height = 1.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label1: TLabel
+          StyledSettings = [Family, Size, FontColor]
+          Position.X = 1.000000000000000000
+          Position.Y = -15.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Descri'#231#227'o da Tarefa'
+          TabOrder = 1
+        end
+      end
+      object Rectangle3: TRectangle
+        Align = Top
+        Fill.Color = claSteelblue
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 2.000000000000000000
+        Padding.Right = 2.000000000000000000
+        Padding.Bottom = 2.000000000000000000
+        Size.Width = 411.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Label3: TLabel
+          Align = Client
+          StyledSettings = [Family, FontColor]
+          Size.Width = 399.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Incluir nova tarefa'
+          TabOrder = 0
+        end
+      end
+      object Rectangle4: TRectangle
+        Anchors = [akRight, akBottom]
+        Fill.Color = claSteelblue
+        Position.X = 286.000000000000000000
+        Position.Y = 91.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        object SpeedButton1: TSpeedButton
+          Align = Client
+          Anchors = [akBottom]
+          StyledSettings = [Family, Size, Style]
+          Size.Width = 113.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Salvar '
+          TextSettings.FontColor = claWhite
+          OnClick = SpeedButton1Click
+        end
+      end
+      object Rectangle5: TRectangle
+        Anchors = [akRight, akBottom]
+        Fill.Color = claRed
+        Position.X = 166.000000000000000000
+        Position.Y = 91.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        object SpeedButton2: TSpeedButton
+          Align = Client
+          Anchors = [akBottom]
+          StyledSettings = [Family, Size, Style]
+          Size.Width = 113.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Cancelar'
+          TextSettings.FontColor = claWhite
+          OnClick = SpeedButton2Click
+        end
+      end
+    end
+  end
+end

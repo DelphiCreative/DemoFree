@@ -1,0 +1,94 @@
+object fCardAtendimento: TfCardAtendimento
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 73
+  ClientWidth = 286
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LayPrincipal: TLayout
+    Align = Client
+    Size.Width = 286.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object retCardAtendimento: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Padding.Left = 5.000000000000000000
+      Padding.Top = 5.000000000000000000
+      Padding.Right = 5.000000000000000000
+      Padding.Bottom = 5.000000000000000000
+      Size.Width = 286.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnDblClick = retCardAtendimentoDblClick
+      object Layout1: TLayout
+        Align = Left
+        Margins.Right = 2.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 63.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object imgCliente: TRoundRect
+          Align = Client
+          Corners = []
+          Fill.Bitmap.WrapMode = TileStretch
+          Fill.Kind = Bitmap
+          Size.Width = 50.000000000000000000
+          Size.Height = 63.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object Layout2: TLayout
+        Align = Client
+        Size.Width = 224.000000000000000000
+        Size.Height = 63.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblAnotacoes: TLabel
+          Align = Client
+          StyledSettings = [Family, Size, Style]
+          Margins.Left = 5.000000000000000000
+          Size.Width = 219.000000000000000000
+          Size.Height = 46.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claSlategray
+          TextSettings.VertAlign = Leading
+          Text = 'lblAnotacoes'
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 0
+        end
+        object lblHorario: TLabel
+          Align = Top
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 219.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = '08:00'
+          TabOrder = 1
+          object lblContato: TLabel
+            Align = Top
+            StyledSettings = [Family, Size, FontColor]
+            Margins.Left = 35.000000000000000000
+            Position.X = 35.000000000000000000
+            Size.Width = 184.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'lblContato'
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+end
