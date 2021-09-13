@@ -12,7 +12,7 @@ uses
   FireDAC.Comp.ScriptCommands, FireDAC.Stan.Util, FireDAC.Stan.Param,
   FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, IPPeerClient, IPPeerServer,
   FireDAC.Comp.Client, Data.DB, FireDAC.Comp.DataSet, System.Tether.Manager,
-  System.Tether.AppProfile, FireDAC.Comp.Script;
+  System.Tether.AppProfile, FireDAC.Comp.Script, FireDAC.Phys.SQLiteWrapper.Stat;
 
 type
   TdmPrincipal = class(TDataModule)
@@ -89,18 +89,18 @@ var
 begin
 
    {$IF DEFINED(iOS) or DEFINED(android)}
-    SqLiteConnection.Params.Values['DataBase'] := TPath.Combine(TPath.GetDocumentsPath,'nkdb.S3DB');
+    SqLiteConnection.Params.Values['DataBase'] := TPath.Combine(TPath.GetDocumentsPath,'DelphiCreative.S3DB');
    {$ENDIF}
 
    {$IF DEFINED (MSWINDOWS)}
-   vDir := 'C:\NK';
+   vDir := 'C:\DelphiCreative';
    if not DirectoryExists(vDir) then CreateDir(vDir);
    if not DirectoryExists(vDir+'\Data') then CreateDir(vDir+'\Data');
 
    Path := TStringList.Create;
 
    if not FileExists(GetCurrentDir+'\config.ini') then begin
-      Path.Add(vDir+'\Data\nkdb.S3DB');
+      Path.Add(vDir+'\Data\DelphiCreative.S3DB');
       Path.SaveToFile(GetCurrentDir+'\config.ini');
    end;
 
