@@ -64,7 +64,7 @@ begin
       if (I = 1)  then begin
          for IDia := 2 to  dayofweek(strtodate( Inttostr(i) + '/'+ sMes +'/'+ sAno )) do begin
             txtDia       := TText.Create(GridMes);
-            txtDia.Align := TAlignLayout.alClient;
+            txtDia.Align := TAlignLayout.Client;
             txtDia.Text  := '';
             txtDia.Parent :=  GridMes;
          end;

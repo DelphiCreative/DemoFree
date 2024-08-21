@@ -923,7 +923,7 @@ begin
       if (I = 1) then begin
          for iDia := 2 to dayofweek(strtodate(Inttostr(I) + '/' + sMes + '/' + sAno)) do begin
            txtDia        := TText.Create(GridDataAtendimentos);
-           txtDia.Align  := TAlignLayout.alClient;
+           txtDia.Align  := TAlignLayout.Client;
            txtDia.Text   := '';
            txtDia.Parent := GridDataAtendimentos;
          end;
