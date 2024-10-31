@@ -5,7 +5,9 @@ object fPrincipal: TfPrincipal
   Caption = 'Delphi Creative v.beta1'
   ClientHeight = 549
   ClientWidth = 960
+  Fill.Kind = Solid
   StyleBook = StyleBook1
+  StyleLookup = 'pushpanel'
   WindowState = wsMaximized
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -141,8 +143,10 @@ object fPrincipal: TfPrincipal
               Size.PlatformDefault = False
               OnKeyUp = edtBuscaAvancadaKeyUp
               object SearchEditButton1: TSearchEditButton
+                Touch.InteractiveGestures = [LongTap]
                 CanFocus = False
                 Cursor = crArrow
+                TextSettings.Trimming = None
                 Size.Width = 32.000000000000000000
                 Size.Height = 25.000000000000000000
                 Size.PlatformDefault = False
@@ -224,6 +228,7 @@ object fPrincipal: TfPrincipal
         TabIndex = 3
         TabOrder = 1
         TabPosition = Bottom
+        Visible = False
         Sizes = (
           960s
           451s
@@ -243,6 +248,7 @@ object fPrincipal: TfPrincipal
           CustomIcon = <
             item
             end>
+          TextSettings.Trimming = None
           IsSelected = False
           Size.Width = 64.000000000000000000
           Size.Height = 49.000000000000000000
@@ -257,6 +263,7 @@ object fPrincipal: TfPrincipal
           CustomIcon = <
             item
             end>
+          TextSettings.Trimming = None
           IsSelected = False
           Size.Width = 16.000000000000000000
           Size.Height = 49.000000000000000000
@@ -270,6 +277,7 @@ object fPrincipal: TfPrincipal
           CustomIcon = <
             item
             end>
+          TextSettings.Trimming = None
           IsSelected = False
           Size.Width = 145.000000000000000000
           Size.Height = 49.000000000000000000
@@ -336,6 +344,7 @@ object fPrincipal: TfPrincipal
                       Size.Height = 48.000000000000000000
                       Size.PlatformDefault = False
                       StyleLookup = 'addtoolbuttonbordered'
+                      TextSettings.Trimming = None
                       OnClick = btnPrincipalAddClienteClick
                     end
                     object ToolBar1: TToolBar
@@ -456,6 +465,7 @@ object fPrincipal: TfPrincipal
                       Size.Height = 48.000000000000000000
                       Size.PlatformDefault = False
                       StyleLookup = 'addtoolbuttonbordered'
+                      TextSettings.Trimming = None
                       OnClick = btnPrincipalAddFornecedorClick
                     end
                   end
@@ -544,6 +554,7 @@ object fPrincipal: TfPrincipal
                       Size.Height = 48.000000000000000000
                       Size.PlatformDefault = False
                       StyleLookup = 'addtoolbuttonbordered'
+                      TextSettings.Trimming = None
                       OnClick = btnPrincipalAddProfissionalClick
                     end
                   end
@@ -592,7 +603,7 @@ object fPrincipal: TfPrincipal
             TextSettings.Font.Size = 20.000000000000000000
             TextSettings.FontColor = xFF0A235E
             Text = 'Fornecedores - Atualiza'#231#245'es Recentes'
-            TabOrder = 54
+            TabOrder = 58
           end
           object Label4: TLabel
             StyledSettings = [Family, Style]
@@ -611,6 +622,7 @@ object fPrincipal: TfPrincipal
           CustomIcon = <
             item
             end>
+          TextSettings.Trimming = None
           IsSelected = True
           Size.Width = 137.000000000000000000
           Size.Height = 49.000000000000000000
@@ -913,6 +925,7 @@ object fPrincipal: TfPrincipal
                 CustomIcon = <
                   item
                   end>
+                TextSettings.Trimming = None
                 IsSelected = True
                 Size.Width = 136.000000000000000000
                 Size.Height = 49.000000000000000000
@@ -936,6 +949,7 @@ object fPrincipal: TfPrincipal
                 CustomIcon = <
                   item
                   end>
+                TextSettings.Trimming = None
                 IsSelected = False
                 Size.Width = 147.000000000000000000
                 Size.Height = 49.000000000000000000
@@ -978,6 +992,7 @@ object fPrincipal: TfPrincipal
                       Size.PlatformDefault = False
                       Text = 'Salvar '
                       TextSettings.FontColor = claWhite
+                      TextSettings.Trimming = None
                       OnClick = btnGravarAtendimentoClick
                     end
                     object Rectangle4: TRectangle
@@ -1029,6 +1044,7 @@ object fPrincipal: TfPrincipal
                       Size.PlatformDefault = False
                       Text = 'Cancelar'
                       TextSettings.FontColor = claWhite
+                      TextSettings.Trimming = None
                       OnClick = btnCancelarAtendimentoClick
                     end
                     object Rectangle10: TRectangle
@@ -1292,6 +1308,7 @@ object fPrincipal: TfPrincipal
                       Size.PlatformDefault = False
                       Text = 'Lan'#231'ar conta '#224' receber'
                       TextSettings.FontColor = claWhite
+                      TextSettings.Trimming = None
                       OnClick = SpeedButton2Click
                     end
                     object Rectangle11: TRectangle
@@ -1341,6 +1358,7 @@ object fPrincipal: TfPrincipal
                       Size.PlatformDefault = False
                       Text = 'Lan'#231'ar conta '#224' pagar'
                       TextSettings.FontColor = claWhite
+                      TextSettings.Trimming = None
                       OnClick = SpeedButton2Click
                     end
                     object Rectangle16: TRectangle
@@ -1377,6 +1395,7 @@ object fPrincipal: TfPrincipal
           CustomIcon = <
             item
             end>
+          TextSettings.Trimming = None
           IsSelected = False
           Size.Width = 110.000000000000000000
           Size.Height = 49.000000000000000000
@@ -1398,6 +1417,7 @@ object fPrincipal: TfPrincipal
           CustomIcon = <
             item
             end>
+          TextSettings.Trimming = None
           IsSelected = False
           Size.Width = 131.000000000000000000
           Size.Height = 49.000000000000000000
@@ -1425,6 +1445,7 @@ object fPrincipal: TfPrincipal
               CustomIcon = <
                 item
                 end>
+              TextSettings.Trimming = None
               IsSelected = True
               Size.Width = 84.000000000000000000
               Size.Height = 49.000000000000000000
@@ -1452,6 +1473,7 @@ object fPrincipal: TfPrincipal
               CustomIcon = <
                 item
                 end>
+              TextSettings.Trimming = None
               IsSelected = False
               Size.Width = 116.000000000000000000
               Size.Height = 49.000000000000000000
@@ -1475,6 +1497,7 @@ object fPrincipal: TfPrincipal
           CustomIcon = <
             item
             end>
+          TextSettings.Trimming = None
           IsSelected = False
           Size.Width = 98.000000000000000000
           Size.Height = 49.000000000000000000
@@ -1706,6 +1729,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 146.000000000000000000
                   Size.Height = 93.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -1798,6 +1822,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 150.000000000000000000
                   Size.Height = 89.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -1893,6 +1918,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 146.000000000000000000
                   Size.Height = 89.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -1988,6 +2014,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 146.000000000000000000
                   Size.Height = 93.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -2085,6 +2112,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 146.000000000000000000
                   Size.Height = 93.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -2180,6 +2208,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 146.000000000000000000
                   Size.Height = 90.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -2275,6 +2304,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 146.000000000000000000
                   Size.Height = 90.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -2369,6 +2399,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 146.000000000000000000
                   Size.Height = 90.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -2464,6 +2495,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 146.000000000000000000
                   Size.Height = 93.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -2559,6 +2591,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 146.000000000000000000
                   Size.Height = 89.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -2654,6 +2687,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 146.000000000000000000
                   Size.Height = 89.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -2748,6 +2782,7 @@ object fPrincipal: TfPrincipal
                   Size.Width = 146.000000000000000000
                   Size.Height = 89.000000000000000000
                   Size.PlatformDefault = False
+                  TextSettings.Trimming = None
                   OnClick = btnJanClick
                 end
               end
@@ -2760,6 +2795,7 @@ object fPrincipal: TfPrincipal
         Position.Y = 16.000000000000000000
         TabOrder = 2
         Text = 'Button2'
+        TextSettings.Trimming = None
         Visible = False
       end
       object retUsuariosAguardando: TCircle
@@ -2799,6 +2835,7 @@ object fPrincipal: TfPrincipal
       Size.Height = 12.000000000000000000
       Size.PlatformDefault = False
       Stroke.Color = claSteelblue
+      Visible = False
       object FloatAnimationEscondeBusca: TFloatAnimation
         Duration = 0.200000002980232200
         OnFinish = FloatAnimationEscondeBuscaFinish
@@ -2980,6 +3017,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
           OnClick = MenuMovimentosButtonClick
         end
         object MenuMovimentosLabel: TLabel
@@ -3032,6 +3070,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
           OnClick = MenuAtendimentosButtonClick
         end
         object MenuAtendimentosLabel: TLabel
@@ -3089,6 +3128,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
           OnClick = MenuClientesButtonClick
         end
         object MenuClientesLabel: TLabel
@@ -3143,6 +3183,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
           OnClick = MenuServicosButtonClick
         end
         object MenuServicosLabel: TLabel
@@ -3208,6 +3249,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
           OnClick = MenuTarefasButtonClick
         end
         object MenuTarefasLabel: TLabel
@@ -3269,6 +3311,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
           OnClick = lblUsuarioClick
         end
         object MenuUsuarioLabel: TLabel
@@ -3325,6 +3368,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
           OnClick = MenuFornecedorButtonClick
         end
         object MenuFornecedorLabel: TLabel
@@ -3382,6 +3426,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
           OnClick = MenuProfissionaisButtonClick
         end
         object MenuProfissionaisLabel: TLabel
@@ -3447,6 +3492,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
           OnClick = MenuContatosButtonClick
         end
         object MenuContatosLabel: TLabel
@@ -3501,6 +3547,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
         end
         object Label1: TLabel
           Align = Client
@@ -3553,6 +3600,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
         end
         object MenuLogoffLabel: TLabel
           Align = Client
@@ -3608,6 +3656,7 @@ object fPrincipal: TfPrincipal
           Size.PlatformDefault = False
           ParentShowHint = False
           ShowHint = True
+          TextSettings.Trimming = None
           OnClick = MenuMovimentosButtonClick
         end
         object Label6: TLabel
@@ -3685,11 +3734,9 @@ object fPrincipal: TfPrincipal
     end
     object tbChangeCadastroUsuario: TChangeTabAction
       Category = 'Tab'
-      Tab = fLogin.tbLoginCadastro
     end
     object tbChangeLoginUsuario: TChangeTabAction
       Category = 'Tab'
-      Tab = fLogin.tbLoginAcesso
     end
     object tbChangeMovimento: TChangeTabAction
       Category = 'Tab'

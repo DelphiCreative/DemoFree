@@ -1,0 +1,294 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 498
+  ClientWidth = 864
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object rctBackground: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 854.000000000000000000
+    Size.Height = 488.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.000000000000000000
+    XRadius = 15.000000000000000000
+    YRadius = 15.000000000000000000
+    object SpeedButton1: TSpeedButton
+      Position.X = 752.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'stoptoolbutton'
+      Text = 'SpeedButton1'
+      TextSettings.Trimming = None
+    end
+    object ShadowEffect1: TShadowEffect
+      Distance = 2.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.300000011920929000
+      ShadowColor = claBlack
+    end
+    object Text1: TText
+      Position.X = 50.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 345.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Contatos'
+      TextSettings.Font.Size = 25.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claSlategray
+      TextSettings.HorzAlign = Leading
+    end
+    object Rectangle4: TRectangle
+      Fill.Color = xFFF0F2F6
+      Position.X = 53.000000000000000000
+      Position.Y = 234.000000000000000000
+      Size.Width = 719.000000000000000000
+      Size.Height = 131.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 7.000000000000000000
+      YRadius = 7.000000000000000000
+      object Text5: TText
+        Position.Y = -26.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Descri'#231#227'o do item'
+        TextSettings.FontColor = claSlategray
+        TextSettings.HorzAlign = Leading
+      end
+      object edtDescription: TMemo
+        Tag = 4
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        StyledSettings = [Family, Size, Style]
+        TextSettings.FontColor = claDarkslategray
+        TextSettings.WordWrap = True
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 699.000000000000000000
+        Size.Height = 111.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'edtDescriptionStyle1'
+        TabOrder = 4
+        Viewport.Width = 695.000000000000000000
+        Viewport.Height = 107.000000000000000000
+      end
+    end
+    object GridPanelLayout1: TGridPanelLayout
+      Padding.Left = 5.000000000000000000
+      Padding.Right = 5.000000000000000000
+      Position.X = 48.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 551.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      ColumnCollection = <
+        item
+          Value = 33.333331214066380000
+        end
+        item
+          Value = 33.333332485625550000
+        end
+        item
+          Value = 33.333336300308050000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = Layout1
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = Layout2
+          Row = 0
+        end
+        item
+          Column = 2
+          Control = Layout3
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      object Layout1: TLayout
+        Align = Client
+        Size.Width = 173.666656494140600000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Rectangle1: TRectangle
+          Align = Bottom
+          Fill.Color = xFFF0F2F6
+          Position.Y = 24.000000000000000000
+          Size.Width = 173.666656494140600000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claGray
+          Stroke.Thickness = 0.000000000000000000
+          XRadius = 7.000000000000000000
+          YRadius = 7.000000000000000000
+          object edtItemId: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            StyleLookup = 'transparentedit'
+            TabOrder = 0
+            TextSettings.FontColor = claDarkslategray
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 153.666656494140600000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'ID'
+            StyledSettings = [Family, Size, Style]
+          end
+          object Text2: TText
+            Position.Y = -25.000000000000000000
+            Size.Width = 50.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'C'#243'digo:'
+            TextSettings.FontColor = claSlategray
+            TextSettings.HorzAlign = Leading
+          end
+        end
+      end
+      object Layout2: TLayout
+        Align = Client
+        Size.Width = 173.666656494140600000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Rectangle2: TRectangle
+          Align = Bottom
+          Fill.Color = xFFF0F2F6
+          Position.Y = 24.000000000000000000
+          Size.Width = 173.666656494140600000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Thickness = 0.000000000000000000
+          XRadius = 7.000000000000000000
+          YRadius = 7.000000000000000000
+          object edtCategory: TEdit
+            Tag = 1
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            StyleLookup = 'transparentedit'
+            TabOrder = 1
+            TextSettings.FontColor = claDarkslategray
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 153.666656494140600000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Categoria'
+            StyledSettings = [Family, Size, Style]
+          end
+          object Text3: TText
+            Position.Y = -25.000000000000000000
+            Size.Width = 153.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Categoria'
+            TextSettings.FontColor = claSlategray
+            TextSettings.HorzAlign = Leading
+          end
+        end
+      end
+      object Layout3: TLayout
+        Align = Client
+        Size.Width = 173.666687011718800000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Rectangle5: TRectangle
+          Align = Bottom
+          Fill.Color = xFFF0F2F6
+          Position.Y = 24.000000000000000000
+          Size.Width = 173.666687011718800000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Thickness = 0.000000000000000000
+          XRadius = 7.000000000000000000
+          YRadius = 7.000000000000000000
+          object edtPrice: TEdit
+            Tag = 2
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            StyleLookup = 'transparentedit'
+            TabOrder = 2
+            TextSettings.FontColor = claDarkslategray
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 153.666687011718800000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Pre'#231'o'
+            StyledSettings = [Family, Size, Style]
+          end
+          object Text6: TText
+            Position.Y = -25.000000000000000000
+            Size.Width = 153.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Pre'#231'o'
+            TextSettings.FontColor = claSlategray
+            TextSettings.HorzAlign = Leading
+          end
+        end
+      end
+    end
+    object Rectangle3: TRectangle
+      Fill.Color = xFFF0F2F6
+      Position.X = 53.000000000000000000
+      Position.Y = 165.000000000000000000
+      Size.Width = 541.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 7.000000000000000000
+      YRadius = 7.000000000000000000
+      object Text4: TText
+        Position.Y = -25.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Nome do item'
+        TextSettings.FontColor = claSlategray
+        TextSettings.HorzAlign = Leading
+      end
+      object edtName: TEdit
+        Tag = 3
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'transparentedit'
+        TabOrder = 3
+        TextSettings.FontColor = claDarkslategray
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 521.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Size, Style]
+      end
+    end
+  end
+end

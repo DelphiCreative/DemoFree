@@ -15,7 +15,6 @@ type
     btnSair: TSpeedButton;
     Rectangle2: TRectangle;
     cbxTarefas: TComboEdit;
-    lblTitulo: TLabel;
     Rectangle3: TRectangle;
     Rectangle4: TRectangle;
     btnSalvar: TSpeedButton;
@@ -26,6 +25,7 @@ type
     procedure btnSairClick(Sender: TObject);
     procedure cbxTarefasChangeTracking(Sender: TObject);
     procedure btnSalvarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
 
   private
     { Private declarations }
@@ -206,6 +206,12 @@ begin
       CarregaLista(dmPrincipal.tabTarefas.FieldByName('Codigo').AsInteger)
    else
       ListBox1.Clear;
+
+end;
+
+procedure TfCardTiposAtendimentos.FormCreate(Sender: TObject);
+begin
+  //inherited;
 
 end;
 

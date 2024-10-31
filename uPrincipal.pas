@@ -430,9 +430,9 @@ implementation
 
 uses
   uContatos, dPrincipal, uCardClientes, uCadastroContatos, uFuncoes,
-  uLogin, uCalendario, uCadastroTarefa, uCardAtendimento,
+  uCalendario, uCadastroTarefa, uCardAtendimento,
   uCardTiposAtendimentos, uItens, uCadastroItens, uBuscaAvancada,
-  uAlteraSenha, uLancarContas, uMovimentacao;
+  uAlteraSenha, uLancarContas, uMovimentacao, FormLogin;
 
 procedure TfPrincipal.GerarAtendimento(CodigoProfissional, CodigoCliente,
   IDAtendimento: Integer);
@@ -1182,7 +1182,6 @@ end;
 procedure TfPrincipal.edtBuscaAvancadaKeyUp(Sender: TObject; var Key: Word;
   var KeyChar: Char; Shift: TShiftState);
 var
-   I: Integer;
    RunDestroy: TLayout;
    vsColuna: TVertScrollBox;
    arrBusca :TArray<String>;
@@ -1500,11 +1499,13 @@ end;
 procedure TfPrincipal.Label7Click(Sender: TObject);
 begin
    Rectangle6.Visible := True;
+
+
    fCardTiposAtendimentos := TfCardTiposAtendimentos.Create(Self);
    fCardTiposAtendimentos.Tarefas;
-   Rectangle7.Height := fCardTiposAtendimentos.Height;
-   Rectangle7.Width := fCardTiposAtendimentos.Width;
-   fPrincipal.Rectangle7.Visible := True;
+   //Rectangle7.Height := fCardTiposAtendimentos.Height;
+   //Rectangle7.Width := fCardTiposAtendimentos.Width;
+   //fPrincipal.Rectangle7.Visible := True;
    Rectangle7.RemoveObject(0);
 
    fCardTiposAtendimentos.Showmodal;
@@ -1564,6 +1565,7 @@ begin
    MultiView1.HideMaster;
    Rectangle6.Visible := True;
    fAlteraSenha := TfAlteraSenha.Create(Self);
+   fAlteraSenha.edtRegisterUsername.Text := lblUsuario.Text;
    fAlteraSenha.Showmodal;
    Rectangle6.Visible := False;
 
@@ -1681,9 +1683,12 @@ end;
 procedure TfPrincipal.Login;
 begin
   Rectangle6.Visible := True;
-  fLogin := TfLogin.Create(Self);
 
-  fLogin.Showmodal;
+  frmLogin := TfrmLogin.Create(Self);
+
+
+
+  frmLogin.Showmodal;
   Rectangle6.Visible := False;
 
   Anos;
@@ -1749,16 +1754,16 @@ begin
    imgProfissionalAtendimento.LoadImagem(lblProfissional.Text);
    tbChangeAtendimentos.Execute;
 
-   Rectangle6.Visible := True;
+   //Rectangle6.Visible := True;
    fCardTiposAtendimentos := TfCardTiposAtendimentos.Create(Self);
    fCardTiposAtendimentos.Tarefas;
-   Rectangle7.Height := fCardTiposAtendimentos.Height;
-   Rectangle7.Width := fCardTiposAtendimentos.Width;
-   fPrincipal.Rectangle7.Visible := True;
-   Rectangle7.RemoveObject(0);
+   //Rectangle7.Height := fCardTiposAtendimentos.Height;
+   //Rectangle7.Width := fCardTiposAtendimentos.Width;
+   //fPrincipal.Rectangle7.Visible := True;
+   //Rectangle7.RemoveObject(0);
 
    fCardTiposAtendimentos.Showmodal;
-   Rectangle7.RemoveObject(0);
+   //Rectangle7.RemoveObject(0);
 
 end;
 

@@ -1,3 +1,17 @@
 
 *.dcu
 /__history
+/Units/__history
+/Win32
+/Win32/Debug
+/Forms/__history
+/Helpers/__history
+/__recovery
+/Win32/Debug
+/Win32/Debug
+*.exe
+DelphiCreative.dproj.local
+DelphiCreative.identcache
+DelphiCreative.res
+*.res
+*.res

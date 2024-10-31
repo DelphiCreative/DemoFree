@@ -34,6 +34,31 @@ object fCardBasico: TfCardBasico
           Opacity = 0.400000005960464500
           ShadowColor = claBlack
         end
+        object txtTitle: TText
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 553.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Alterar Senha'
+          TextSettings.Font.Size = 25.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claSlategray
+          object SpeedButton1: TSpeedButton
+            Align = Right
+            Position.X = 513.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'stoptoolbutton'
+            Text = 'SpeedButton1'
+            TextSettings.Trimming = None
+          end
+        end
       end
     end
     object SombraPrincipal: TShadowEffect

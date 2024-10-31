@@ -339,9 +339,10 @@ begin
       Line.Stroke.Color := TAlphaColors.Steelblue;
       Line.LineType     := TLineType.Bottom;
       Line.Height       := 1;
-      Line.Position.Y   := 21; //-8;
+      Line.Position.Y   := TEdit(Self).Height; //-8;
       Line.Width :=  TEdit(Self).Width;
       Line.Parent       := Self;
+
    end else  if (Self is TComboEdit) then begin
       TComboEdit(Self).StyleLookup := 'cbxCategoriaStyle1';
       lbl := TLabel.Create(Self);
@@ -466,7 +467,7 @@ begin
       result :=(LeftStr(nome,1) + LeftStr(ini[TRegEx.Matches(nome,' ').Count],1))
    end else if nome <> '' then
        result := LeftStr(nome,1)// + LeftStr(nome,1)
-   else Result :=  'NK';
+   else Result :=  'DC';
  end;
 
 function ValorAtendimento(IDAtendimento :integer):String;
