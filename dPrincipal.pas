@@ -3,6 +3,7 @@ unit dPrincipal;
 interface
 
 uses
+  System.IniFiles,
   System.SysUtils, System.StrUtils,System.Classes,  System.Variants,
   FireDAC.Stan.Intf, FireDAC.Stan.Option,
   FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
@@ -35,6 +36,7 @@ type
     tabImagem: TFDQuery;
     tabContas: TFDQuery;
     tabMovimentos: TFDQuery;
+    tabUsuarios: TFDQuery;
     procedure SqLiteConnectionBeforeConnect(Sender: TObject);
     procedure SqLiteConnectionAfterConnect(Sender: TObject);
     procedure UpdateVersion;
@@ -83,34 +85,17 @@ begin
 end;
 
 procedure TdmPrincipal.SqLiteConnectionBeforeConnect(Sender: TObject);
-var
-   Path :TStringList;
-   vDir :string;
 begin
+   SqLiteConnection.Params.Values['DataBase'] := 'demo.db';
 
-   {$IF DEFINED(iOS) or DEFINED(android)}
-    SqLiteConnection.Params.Values['DataBase'] := TPath.Combine(TPath.GetDocumentsPath,'DelphiCreative.S3DB');
-   {$ENDIF}
-
-   {$IF DEFINED (MSWINDOWS)}
-   vDir := 'C:\DelphiCreative';
-   if not DirectoryExists(vDir) then CreateDir(vDir);
-   if not DirectoryExists(vDir+'\Data') then CreateDir(vDir+'\Data');
-
-   Path := TStringList.Create;
-
-   if not FileExists(GetCurrentDir+'\config.ini') then begin
-      Path.Add(vDir+'\Data\DelphiCreative.S3DB');
-      Path.SaveToFile(GetCurrentDir+'\config.ini');
-   end;
-
-   if FileExists(GetCurrentDir+'\config.ini') then
-      Path.LoadFromFile(GetCurrentDir+'\config.ini');
-
-   PathDB := Path.Strings[0];
-   SqLiteConnection.Params.Values['DataBase'] := PathDB;
-
-   {$ENDIF}
+//  {$IF DEFINED(MSWINDOWS)}
+//  Config := TConfig.Create;
+//  try
+//     SqLiteConnection.Params.Values['DataBase']  := Config.DatabasePath;
+//  finally
+//     Config.Free;
+//  end;
+//  {$ENDIF}
 end;
 
 procedure TdmPrincipal.UpdateVersion;

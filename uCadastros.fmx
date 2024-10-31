@@ -19,12 +19,14 @@ object fCadastros: TfCadastros
       Position.Y = 316.000000000000000000
       TabOrder = 0
       Text = 'Cancelar'
+      TextSettings.Trimming = None
     end
     object btnSalvar: TButton
       Position.X = 24.000000000000000000
       Position.Y = 316.000000000000000000
       TabOrder = 1
       Text = 'Salvar'
+      TextSettings.Trimming = None
     end
   end
 end

@@ -10,40 +10,42 @@ uses
 
 type
   TfAlteraSenha = class(TForm)
-    TabControl1: TTabControl;
-    tbLoginAcesso: TTabItem;
-    Label3: TLabel;
-    Label4: TLabel;
-    Rectangle1: TRectangle;
-    FloatAnimation1: TFloatAnimation;
-    Rectangle4: TRectangle;
-    SpeedButton1: TSpeedButton;
-    Rectangle3: TRectangle;
-    SpeedButton2: TSpeedButton;
-    tbLoginCadastro: TTabItem;
-    btSalvarUsuario: TSpeedButton;
     Layout1: TLayout;
-    edtUsuarioNome: TEdit;
-    lblVerificaUsuario: TLabel;
-    edtUsuarioSenha: TEdit;
-    lblSenha: TLabel;
-    edtUsuarioConfirma: TEdit;
-    lblConfirmaSenha: TLabel;
-    lblUsuarioNome: TLabel;
-    lblUsuarioSenha: TLabel;
-    lblUsuarioSenhaConfirmar: TLabel;
-    retVoltarLogin: TRectangle;
-    retAddUsuario: TRectangle;
-    Rectangle6: TRectangle;
-    Edit2: TEdit;
-    Label2: TLabel;
     ShadowEffect1: TShadowEffect;
-    Label1: TLabel;
-    procedure Edit1ChangeTracking(Sender: TObject);
+    Layout5: TLayout;
+    layRegisterUsername: TLayout;
+    rctRegisterUsername: TRectangle;
+    edtRegisterUsername: TEdit;
+    txtRegisterUsername: TText;
+    imgRegisterUsername: TImage;
+    layRegisterNewPassword: TLayout;
+    rctRegisterNewPassword: TRectangle;
+    edtRegisterNewPassword: TEdit;
+    txtRegisterNewPassword: TText;
+    imgRegisterNewPassword: TImage;
+    layRegisterPassword: TLayout;
+    rctRegisterPassword: TRectangle;
+    edtRegisterPassword: TEdit;
+    txtRegisterPassword: TText;
+    imgRegisterPassword: TImage;
+    rctRegister: TRectangle;
+    btnRegister: TSpeedButton;
+    layRegisterConfirmPassword: TLayout;
+    rctRegisterConfirmPassword: TRectangle;
+    edtRegisterConfirmPassword: TEdit;
+    txtRegisterConfirmPassword: TText;
+    imgRegisterConfirmPassword: TImage;
+    Rectangle2: TRectangle;
+    Text2: TText;
+    SpeedButton1: TSpeedButton;
     procedure Rectangle6Click(Sender: TObject);
-    procedure retAddUsuarioClick(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure btnRegisterClick(Sender: TObject);
+    procedure edtRegisterPasswordEnter(Sender: TObject);
+    procedure edtRegisterPasswordExit(Sender: TObject);
   private
     { Private declarations }
+    procedure UpdatePassword(ANewUserName, ANewPassword, AOldPassword, AOldUserName:String);
   public
     { Public declarations }
   end;
@@ -55,22 +57,44 @@ implementation
 
 {$R *.fmx}
 
-uses dPrincipal, uPrincipal, uFuncoes;
+uses dPrincipal, uPrincipal, uFuncoes, FMX.Helper.Utils;
 
-procedure TfAlteraSenha.Edit1ChangeTracking(Sender: TObject);
+procedure TfAlteraSenha.btnRegisterClick(Sender: TObject);
 begin
-   dmPrincipal.QuerySelect.Open('SELECT * FROM usuarios WHERE Nome = '+QuotedStr(fPrincipal.lblUsuario.Text) +
-                                ' AND Senha ='+QuotedStr(Edit2.Text) );
 
-   if dmPrincipal.QuerySelect.RecordCount = 0 then
-      edtUsuarioNome.Enabled := False
-   else
-      edtUsuarioNome.Enabled := True;
+   dmPrincipal.tabUsuarios.Locate('Nome',fPrincipal.lblUsuario.Text,[]);
 
-   edtUsuarioNome.Tag := dmPrincipal.QuerySelect.FieldByName('ID').AsInteger;
-   edtUsuarioSenha.Enabled := edtUsuarioNome.Enabled;
-   edtUsuarioConfirma.Enabled := edtUsuarioNome.Enabled
+   ShowValidationError(edtRegisterPassword.Text = '','Digite sua senha',
+                       rctRegister.Fill.Color , edtRegisterPassword);
 
+   ShowValidationError(edtRegisterPassword.Text <> dmPrincipal.tabUsuarios.FieldByName('Senha').AsString,'Senha inválida',
+                       rctRegister.Fill.Color , edtRegisterPassword);
+
+   ShowValidationError(edtRegisterNewPassword.Text = '','Informe a nova senha',
+                       rctRegister.Fill.Color , edtRegisterNewPassword);
+
+   ShowValidationError(edtRegisterConfirmPassword.Text = '','Confirme a nova senha',
+                       rctRegister.Fill.Color , edtRegisterConfirmPassword);
+
+   ShowValidationError(edtRegisterNewPassword.Text <> edtRegisterConfirmPassword.Text,'As senhas são diferente',
+                       rctRegister.Fill.Color , edtRegisterConfirmPassword);
+
+
+   Executar('UPDATE usuarios SET Senha ='+QuotedStr(edtRegisterNewPassword.Text) +
+                 ' WHERE Nome = ' + QuotedStr(edtRegisterUsername.text));
+
+   ShowValidationError('Senha alterada com sucesso',  rctRegister.Fill.Color , edtRegisterConfirmPassword);
+
+end;
+
+procedure TfAlteraSenha.edtRegisterPasswordEnter(Sender: TObject);
+begin
+   ApplyShadowToShape(Sender);
+end;
+
+procedure TfAlteraSenha.edtRegisterPasswordExit(Sender: TObject);
+begin
+   RemoveShadowFromShape(Sender);
 end;
 
 procedure TfAlteraSenha.Rectangle6Click(Sender: TObject);
@@ -78,45 +102,14 @@ begin
    Close;
 end;
 
-procedure TfAlteraSenha.retAddUsuarioClick(Sender: TObject);
+procedure TfAlteraSenha.SpeedButton1Click(Sender: TObject);
 begin
+   Close;
+end;
 
-   if edtUsuarioSenha.Text = '' then begin
-      lblSenha.Text := 'Informe a senha';
-      lblSenha.Visible := True;
-      abort;
-   end else lblSenha.Visible := False;
-
-   if edtUsuarioConfirma.Text = '' then begin
-      lblUsuarioSenha.Text := 'Informe a senha';
-      lblUsuarioSenha.Visible := True;
-      abort;
-   end else lblUsuarioSenha.Visible := True;
-
-   if edtUsuarioSenha.Text <> edtUsuarioConfirma.Text then begin
-      lblSenha.Text := 'Senhas não conferem';
-      lblSenha.Visible := True;
-      abort;
-   end;
-
-   if (edtUsuarioNome.Text <> '') and (edtUsuarioNome.Text <> fPrincipal.lblUsuario.Text) then begin
-      dmPrincipal.QuerySelect.Open('SELECT * FROM usuarios WHERE Nome = '+QuotedStr(edtUsuarioNome.Text));
-      if dmPrincipal.QuerySelect.RecordCount > 0 then begin
-         lblVerificaUsuario.Visible := True;
-         lblVerificaUsuario.Text := 'Nome indísponivel';
-         lblVerificaUsuario.TextSettings.FontColor := TAlphaColors.Red;
-         abort;
-      end else begin
-         Executar('UPDATE usuarios SET Nome = '+QuotedStr(edtUsuarioNome.Text) +
-                  ',Senha ='+QuotedStr(edtUsuarioSenha.Text) + ' WHERE ID = '+inttostr(edtUsuarioNome.tag) );
-         fPrincipal.lblUsuario.Text := edtUsuarioNome.Text;
-         Close;
-      end;
-   end else if (edtUsuarioNome.Text = '') then begin
-        Executar('UPDATE usuarios SET Senha ='+QuotedStr(edtUsuarioSenha.Text) +
-                 ' WHERE ID = '+inttostr(edtUsuarioNome.tag));
-        Close;
-   end;
+procedure TfAlteraSenha.UpdatePassword(ANewUserName, ANewPassword, AOldPassword,
+  AOldUserName: String);
+begin
 
 end;
 

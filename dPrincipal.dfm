@@ -1,5 +1,4 @@
 object dmPrincipal: TdmPrincipal
-  OldCreateOrder = False
   OnCreate = DataModuleCreate
   Height = 442
   Width = 736
@@ -486,5 +485,10 @@ object dmPrincipal: TdmPrincipal
     Connection = SqLiteConnection
     Left = 637
     Top = 344
+  end
+  object tabUsuarios: TFDQuery
+    Connection = SqLiteConnection
+    Left = 456
+    Top = 296
   end
 end
